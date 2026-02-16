@@ -10,7 +10,7 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.min.js"></script>
   
-  <!-- Firebase -->
+  <!-- Firebase SDK -->
   <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
@@ -272,13 +272,13 @@
     // Firebase Configuration
     // --------------------------------------------------------
     const firebaseConfig = {
-      apiKey: "AIzaSyABrzk3SHN0lVpBY97xDQZdUgOKREb89aQ",
-      authDomain: "test-biology-47fcc.firebaseapp.com",
-      projectId: "test-biology-47fcc",
-      storageBucket: "test-biology-47fcc.firebasestorage.app",
-      messagingSenderId: "758750642719",
-      appId: "1:758750642719:web:d4d70897d1839886d9cb2a",
-      measurementId: "G-VTGK8GY9DK"
+      apiKey: "AIzaSyC8mNieWscg6bCCNsOZTxmJrsQ20myWAEQ",
+      authDomain: "test-bio-1-person.firebaseapp.com",
+      projectId: "test-bio-1-person",
+      storageBucket: "test-bio-1-person.firebasestorage.app",
+      messagingSenderId: "20071461682",
+      appId: "1:20071461682:web:ddd5b9ad2f1b9f76845d2b",
+      measurementId: "G-6HEDFT856Y"
     };
 
     // Initialize Firebase
@@ -309,6 +309,8 @@
     let timerSettings = { enabled: false, minutes: 60 };
     let allResults = [];
     let allStudents = [];
+    
+    // Anti-cheat Flags
     let isAway = false;
     let lastCheatTime = 0;
 
